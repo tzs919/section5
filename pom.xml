@@ -31,7 +31,6 @@
         <hamcrestVersion>1.3</hamcrestVersion>
         <springSecurityVersion>3.2.0.RELEASE</springSecurityVersion>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-
     </properties>
 
     <dependencies>
@@ -161,7 +160,7 @@
     </dependencies>
 
     <build>
-        <finalName>section4</finalName>
+        <finalName>section5</finalName>
         <plugins>
             <!-- jetty插件 -->
             <plugin>
@@ -176,7 +175,7 @@
                     </webApp>
                     <connectors>
                         <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-                            <port>8088</port>
+                            <port>8080</port>
                             <maxIdleTime>60000</maxIdleTime>
                         </connector>
                     </connectors>

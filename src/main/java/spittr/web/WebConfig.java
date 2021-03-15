@@ -25,6 +25,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     viewResolver.setTemplateEngine(templateEngine);
     return viewResolver;
   }
+
   @Bean
   public SpringTemplateEngine templateEngine(TemplateResolver templateResolver) {
     SpringTemplateEngine templateEngine = new SpringTemplateEngine();
